@@ -51,7 +51,7 @@ You can install MostJS via npm:
 
 ```bash
 # Using npm
-npm i @hacker_man/most-js
+npm i @youzar-boot/most-js
 ```
 
 ### Using CDN
@@ -59,7 +59,7 @@ npm i @hacker_man/most-js
 For direct use in browsers without a build step:
 
 ```js
-import { anything } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js'
+import { anything } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js'
 ```
 
 ### Basic Usage
@@ -67,7 +67,7 @@ import { anything } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0
 Here's a simple example showing how to create a counter application:
 
 ```js
-import { Div, H1, P, Button, useState, render } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, H1, P, Button, useState, render } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -147,7 +147,7 @@ MostJS provides creation-components, which are predefined functions that use the
 **Example:**
 
 ```js
-import { Div, P } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, P } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 return Div({ className: 'container' }, [
   P({ id: "greeting" }, ["Hello world"])
@@ -211,7 +211,7 @@ Component(componentFn, props, title)
 **Example:**
 
 ```js
-import { Div, Component } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, Component } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 import Sidebar from './Sidebar.js';
 import MainContent from './MainContent.js';
 
@@ -255,7 +255,7 @@ const [state, setState] = useState(initialValue);
 **Example:**
 
 ```js
-import { Div, Button, useState } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, Button, useState } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -300,7 +300,7 @@ const elementRef = useRef(referenceId);
 **Example:**
 
 ```js
-import { Div, Input, Button, useRef } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, Input, Button, useRef } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 const SearchField = () => {
   const inputRef = useRef("search-input");
@@ -355,7 +355,7 @@ Watch(callback, dependencies);
 **Example:**
 
 ```js
-import { Div, H1, useState, Watch } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, H1, useState, Watch } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 const UserProfile = (props) => {
   const [user, setUser] = useState(null);
@@ -400,7 +400,7 @@ MostJS includes a robust client-side router for creating single-page application
 #### Initialization
 
 ```js
-import { router } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { router } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 // Set up routes
 router.register('/path', ComponentHandler, 'Page Title');
@@ -515,7 +515,7 @@ router.setNotFoundHandler(NotFoundComponent);
 MostJS provides a special `Link` component that integrates with the router:
 
 ```js
-import { Link } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Link } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 // In your component:
 Link({ href: '/users/profile', className: 'nav-link' }, ['Go to Profile'], true);
@@ -539,7 +539,7 @@ Here's an example of a complete SPA with routing:
 import { 
   Div, H1, P, Link, Component, 
   router 
-} from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+} from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 // Components
 const Home = () => {
@@ -598,7 +598,7 @@ router.start();
 You can combine the router with state management to create dynamic views:
 
 ```js
-import { Div, P, useState, Watch, router } from 'https://cdn.jsdelivr.net/npm/@hacker_man/most-js@1.3.0/index.js';
+import { Div, P, useState, Watch, router } from 'https://cdn.jsdelivr.net/npm/@youzar-boot/most-js@1.3.0/index.js';
 
 const FilteredList = () => {
   // Initialize state from URL parameters
